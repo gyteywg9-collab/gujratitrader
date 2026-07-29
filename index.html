@@ -3,95 +3,184 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Deepak Wadhwa - Learning Community</title>
+<title>Gujarati Trader - Learning Community</title>
 <style>
+  * {
+    box-sizing: border-box;
+  }
   body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #0e0e0e;
-    color: #fff;
-    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #000;
     padding: 20px;
   }
-  img.profile {
-    width: 150px;
-    height: 150px;
+
+  .card {
+    width: 100%;
+    max-width: 380px;
+    background: #0a0f14;
+    border: 2px solid #22d3ee;
+    border-radius: 28px;
+    padding: 30px 25px 25px;
+    text-align: center;
+    box-shadow:
+      0 0 15px rgba(34, 211, 238, 0.6),
+      0 0 35px rgba(34, 211, 238, 0.3),
+      inset 0 0 20px rgba(34, 211, 238, 0.05);
+  }
+
+  .logo-wrap {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
     border-radius: 50%;
+    border: 3px solid #22d3ee;
+    box-shadow:
+      0 0 12px rgba(34, 211, 238, 0.8),
+      0 0 25px rgba(34, 211, 238, 0.5);
+    overflow: hidden;
+  }
+
+  .logo-wrap img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    margin-top: 20px;
+    display: block;
   }
+
   h1 {
-    margin: 15px 0 5px;
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 1px;
+    margin: 0 0 25px;
+    font-weight: 800;
   }
-  .tagline {
-    color: #ccc;
-    margin-bottom: 20px;
+
+  .features {
+    text-align: left;
+    margin-bottom: 25px;
   }
-  .features p {
-    margin: 8px 0;
+
+  .feature-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 4px;
+    border-bottom: 1px solid rgba(34, 211, 238, 0.2);
+    color: #e5e7eb;
     font-size: 15px;
   }
+
+  .feature-row:last-child {
+    border-bottom: none;
+  }
+
+  .feature-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+  }
+
+  .subtext {
+    color: #f5f5f5;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
   .join-btn {
-    display: inline-block;
-    background: #229ED9;
+    display: block;
+    width: 100%;
+    background: linear-gradient(90deg, #38bdf8, #818cf8, #a855f7);
     color: #fff;
-    padding: 14px 30px;
+    padding: 16px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
-    margin: 25px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(129, 140, 248, 0.5);
   }
+
   .quote {
-    color: #aaa;
-    font-style: italic;
-    margin: 20px 0;
+    color: #d1d5db;
+    font-size: 14px;
+    margin-bottom: 20px;
+    line-height: 1.5;
   }
-  .ad {
+
+  .ad-box {
+    border: 1px solid rgba(34, 211, 238, 0.5);
+    border-radius: 10px;
+    padding: 12px;
     font-size: 13px;
-    color: #888;
+    color: #cbd5e1;
+    margin-bottom: 15px;
   }
-  .ad a {
-    color: #229ED9;
+
+  .ad-box a {
+    color: #38bdf8;
     text-decoration: none;
+    font-weight: 600;
   }
+
   footer {
-    margin-top: 30px;
-    font-size: 12px;
-    color: #777;
+    font-size: 11px;
+    color: #6b7280;
+    line-height: 1.6;
   }
+
   footer a {
-    color: #999;
-    margin: 0 5px;
+    color: #9ca3af;
     text-decoration: none;
+    margin: 0 4px;
   }
 </style>
 </head>
 <body>
 
-  <img class="profile" src="https://i.ibb.co/TST55dB/541251281-17857953192499722-1362993742765339255-n.jpg" alt="Gujarati Trader">
+  <div class="card">
 
-  <h1>Gujarati Trader</h1>
-  <p class="tagline">Learning &amp; Educational Sessions</p>
+    <div class="logo-wrap">
+      <img src="https://i.ibb.co/TST55dB/541251281-17857953192499722-1362993742765339255-n.jpg" alt="Gujarati Trader">
+    </div>
 
-  <div class="features">
-    <p>🌐 Learning &amp; Educational Sessions</p>
-    <p>📊 Market Concepts &amp; Awareness</p>
-    <p>💎 Chart Reading Concepts</p>
-    <p>💻 Educational Case Discussions</p>
+    <h1>GUJARATI TRADER</h1>
+
+    <div class="features">
+      <div class="feature-row">
+        <span class="feature-icon">🌐</span>
+        <span>Learning &amp; Educational Sessions</span>
+      </div>
+      <div class="feature-row">
+        <span class="feature-icon">📊</span>
+        <span>Market Concepts &amp; Awareness</span>
+      </div>
+      <div class="feature-row">
+        <span class="feature-icon">💎</span>
+        <span>Chart Reading Concepts</span>
+      </div>
+      <div class="feature-row">
+        <span class="feature-icon">💻</span>
+        <span>Educational Case Discussions</span>
+      </div>
+    </div>
+
+    <p class="subtext">Join our learning community and grow your knowledge</p>
+
+    <a class="join-btn" href="https://t.me/+8NLAZuBXFCNkMGZl" target="_blank">JOIN TELEGRAM</a>
+
+    <p class="quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
+
+    <footer>
+      <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a><br>
+      This site is not part of Facebook™ or endorsed by Facebook™.
+    </footer>
+
   </div>
-
-  <p>Join our learning community and grow your knowledge</p>
-
-  <a class="join-btn" href="https://t.me/+8NLAZuBXFCNkMGZl" target="_blank">JOIN TELEGRAM</a>
-
-  <p class="quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
-
-  <p class="ad">This Channel Advertise By <a href="https://t.me/+FCJ4P867qhxjOTk9" target="_blank">AD BUILD AGENCY</a></p>
-
-  <footer>
-    <a href="#">Terms</a> | <a href="#">Privacy</a> | <a href="#">Disclaimer</a><br>
-    This site is not part of Facebook™ or endorsed by Facebook™.
-  </footer>
 
   <img src="https://www.facebook.com/tr?id=978870591873022&ev=PageView&noscript=1" style="display:none;" alt="">
 
